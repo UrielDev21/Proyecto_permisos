@@ -7,7 +7,7 @@ create table usuarios
     apellidom varchar(255), 
     fecha_nacimiento DATE,
     rfc VARCHAR(13),
-        user varchar(100), 
+    user varchar(100), 
     pass varchar(255)
 );
 describe usuarios; 
