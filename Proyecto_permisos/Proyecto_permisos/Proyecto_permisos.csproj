@@ -46,14 +46,80 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmBuscarRefacciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmBuscarRefacciones.Designer.cs">
+      <DependentUpon>FrmBuscarRefacciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_AgregarHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AgregarHerramientas.Designer.cs">
+      <DependentUpon>Frm_AgregarHerramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_AgregarRefacciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AgregarRefacciones.Designer.cs">
+      <DependentUpon>Frm_AgregarRefacciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_AgregarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AgregarUsuarios.Designer.cs">
+      <DependentUpon>Frm_AgregarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BuscarHerramintas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BuscarHerramintas.Designer.cs">
+      <DependentUpon>Frm_BuscarHerramintas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BuscarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BuscarUsuarios.Designer.cs">
+      <DependentUpon>Frm_BuscarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_InicioSesion.Designer.cs">
+      <DependentUpon>Frm_InicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Menu.Designer.cs">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBuscarRefacciones.resx">
+      <DependentUpon>FrmBuscarRefacciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_AgregarHerramientas.resx">
+      <DependentUpon>Frm_AgregarHerramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_AgregarRefacciones.resx">
+      <DependentUpon>Frm_AgregarRefacciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_AgregarUsuarios.resx">
+      <DependentUpon>Frm_AgregarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BuscarHerramintas.resx">
+      <DependentUpon>Frm_BuscarHerramintas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BuscarUsuarios.resx">
+      <DependentUpon>Frm_BuscarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_InicioSesion.resx">
+      <DependentUpon>Frm_InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Menu.resx">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +128,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +142,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descargas %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circulo-de-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b41b2f1d-646f-41a9-91b4-52162e677cae.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1170679.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mechanic-tool-logo-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_176876347_NdDgOmHqQ5hrP9trpXD8zkIepevLqtC3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_permisos
 {
-    public partial class Form1 : Form
+    public partial class Frm_AgregarHerramientas : Form
     {
-        public Form1()
+        public Frm_AgregarHerramientas()
         {
             InitializeComponent();
         }
