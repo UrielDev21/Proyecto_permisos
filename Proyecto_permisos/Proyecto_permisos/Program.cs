@@ -16,7 +16,7 @@ namespace Proyecto_permisos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_AgregarHerramientas());
+            Application.Run(new Frm_BuscarHerramintas());
         }
     }
 }
