@@ -51,6 +51,13 @@ namespace Proyecto_permisos
                         dtgvTaller.Visible = false; 
 
                     }break; 
+                case 6:
+                    {
+                        CodigoHerramienta = dtgvTaller.Rows[fila].Cells[0].Value.ToString();
+                        mt.EliminarHerramientas(CodigoHerramienta, dtgvTaller.Rows[fila].Cells[1].Value.ToString());
+                        dtgvTaller.Visible = false;
+                    }
+                    break; 
             }
         }
 

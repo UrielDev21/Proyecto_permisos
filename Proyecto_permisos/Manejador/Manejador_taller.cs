@@ -26,6 +26,17 @@ namespace Manejador
             MessageBox.Show(f.Guardar($"call p_modificar_herramienta('{CodigoHerramienta.Text}', '{Nombre.Text}', '{Medida.Text}', '{Marca.Text}', '{Descripcion.Text}')"),
                 "ATENCION", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        
+        // Funcion para eliminar los registros de la tabla de herramientas
+        public void EliminarHerramientas(string CodigoHerramienta, string dato)
+        {
+            DialogResult rs = MessageBox.Show($"Estas seguro de eliminar {dato}", "ATENCION", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (rs == DialogResult.Yes)
+            {
+                f.Borrar($"call p_eliminar_herramienta('{CodigoHerramienta}')");
+                MessageBox.Show("Registro eliminado", "ATENCION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
 
         // Funcion para poder crear botones dentro del datagrid
         DataGridViewButtonColumn Boton(string Texto, Color fondo)
@@ -44,7 +55,9 @@ namespace Manejador
         {
             tabla.Columns.Clear();
             tabla.DataSource = f.Mostrar($"select * from v_vista_taller where nombre like '%{filtro}%'", "taller").Tables[0];
-            tabla.Columns.Add(Boton("Modificar", Color.Green)); 
+            tabla.Columns.Add(Boton("Modificar", Color.Green));
+            // Nuevo boton para eliminar
+            tabla.Columns.Add(Boton("Eliminar", Color.Red)); 
             tabla.AutoResizeColumns();
             tabla.AutoResizeRows(); 
         }
