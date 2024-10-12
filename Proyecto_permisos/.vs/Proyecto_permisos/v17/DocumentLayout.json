@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|c:\\users\\saave\\onedrive\\documentos\\aorus\\usuarios\\proyecto_permisos\\proyecto_permisos\\frm_iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|solutionrelative:proyecto_permisos\\frm_iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|c:\\users\\saave\\onedrive\\documentos\\aorus\\usuarios\\proyecto_permisos\\proyecto_permisos\\frmbuscarrefacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|solutionrelative:proyecto_permisos\\frmbuscarrefacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|c:\\users\\saave\\onedrive\\documentos\\aorus\\usuarios\\proyecto_permisos\\proyecto_permisos\\frm_agregarherramientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|solutionrelative:proyecto_permisos\\frm_agregarherramientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|c:\\users\\saave\\onedrive\\documentos\\aorus\\usuarios\\proyecto_permisos\\proyecto_permisos\\frm_agregarrefacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|solutionrelative:proyecto_permisos\\frm_agregarrefacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|c:\\users\\saave\\onedrive\\documentos\\aorus\\usuarios\\proyecto_permisos\\proyecto_permisos\\frm_agregarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|solutionrelative:proyecto_permisos\\frm_agregarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A6018B95-A2C8-4041-B2D6-C2C7813BCA97}|Acceso_datos\\Acceso_datos.csproj|c:\\users\\saave\\onedrive\\documentos\\aorus\\usuarios\\proyecto_permisos\\acceso_datos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6018B95-A2C8-4041-B2D6-C2C7813BCA97}|Acceso_datos\\Acceso_datos.csproj|solutionrelative:acceso_datos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,8 +31,8 @@
       "RelativeMoniker": "D:0:0:{8A4A460D-5BD5-4F11-AB30-88E6F7EDF2F7}|Manejador\\Manejador.csproj|solutionrelative:manejador\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\proyecto_permisos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|solutionrelative:proyecto_permisos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\proyecto_permisos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:proyecto_permisos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +51,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Frm_InicioSesion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Frm_InicioSesion.cs",
+              "RelativeDocumentMoniker": "Proyecto_permisos\\Frm_InicioSesion.cs",
+              "ToolTip": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Frm_InicioSesion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_permisos\\Frm_InicioSesion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:56:35.44Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmBuscarRefacciones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\FrmBuscarRefacciones.cs",
+              "RelativeDocumentMoniker": "Proyecto_permisos\\FrmBuscarRefacciones.cs",
+              "ToolTip": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\FrmBuscarRefacciones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_permisos\\FrmBuscarRefacciones.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:56:34.266Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Frm_AgregarHerramientas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Frm_AgregarHerramientas.cs",
+              "RelativeDocumentMoniker": "Proyecto_permisos\\Frm_AgregarHerramientas.cs",
+              "ToolTip": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Frm_AgregarHerramientas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_permisos\\Frm_AgregarHerramientas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:56:31.594Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frm_AgregarRefacciones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Frm_AgregarRefacciones.cs",
+              "RelativeDocumentMoniker": "Proyecto_permisos\\Frm_AgregarRefacciones.cs",
+              "ToolTip": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Frm_AgregarRefacciones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_permisos\\Frm_AgregarRefacciones.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:56:30.24Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frm_AgregarUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Frm_AgregarUsuarios.cs",
+              "RelativeDocumentMoniker": "Proyecto_permisos\\Frm_AgregarUsuarios.cs",
+              "ToolTip": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Frm_AgregarUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_permisos\\Frm_AgregarUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:56:27.444Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Acceso_datos\\Class1.cs",
               "RelativeDocumentMoniker": "Acceso_datos\\Class1.cs",
@@ -43,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Manejador\\Class1.cs",
               "RelativeDocumentMoniker": "Manejador\\Class1.cs",
@@ -55,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto_permisos\\Form1.cs",
