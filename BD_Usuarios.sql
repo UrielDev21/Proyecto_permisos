@@ -7,7 +7,7 @@ create table usuarios
     apellidom varchar(255), 
     fecha_nacimiento DATE,
     rfc VARCHAR(13),
-    user varchar(100), 
+    user varchar(100) UNIQUE,
     pass varchar(255)
 );
 describe usuarios; 
@@ -15,12 +15,16 @@ describe usuarios;
 create table permisos
 (
     id_permiso int PRIMARY key auto_increment, 
-    fk_id_usuario int, 
-    tipo_permiso VARCHAR(200),
-    permiso_formulario varchar(200),
-    foreign key (fk_id_usuario) references usuarios (id_usuario)
+    fk_username varchar(100),
+    nombre_formulario varchar(255),
+    Lectura BIT,
+    Escritura BIT,
+    Actualizacion BIT,
+    Eliminacion BIT,
+    foreign key (fk_username) references usuarios (user)
 ); 
-DESCRIBE permisos;
+
+describe permisos;
 
 -- Tabla de refacciones --
 create table refacciones
@@ -52,67 +56,90 @@ CREATE procedure p_insertar_usuarios
     in _fecha_nacimiento DATE,
     in _rfc VARCHAR(13),
     in _user varchar(100), 
-    in _pass varchar(255),
-    in _tipo_permiso varchar(200),
-    in _permiso_formulario varchar(200)
+    in _pass varchar(255)
 )
-begin 
-
-    declare nuevo_id_usuario int; 
+begin  
 
     insert into usuarios (nombre, apellidop, apellidom, fecha_nacimiento, rfc, user, pass) values 
     (_nombre, _apellidop, _apellidom, _fecha_nacimiento, _rfc, _user, _pass);
-
-    set nuevo_id_usuario = last_insert_id(); 
-
-    insert into permisos(fk_id_usuario, tipo_permiso, permiso_formulario) values 
-    (nuevo_id_usuario, _tipo_permiso, _permiso_formulario); 
 end;
+
+-- Prueba de funcionamiento --
+call p_insertar_usuarios('Juan', 'Perez', 'Prado', '2000-01-01', 'DAOYUIR121341', 'Juan11', sha1('1234')); 
+select * from usuarios; 
+
 -- Procedimiento almacenado para modificar usuarios --
 drop procedure if exists p_modificar_usuarios; 
 CREATE procedure p_modificar_usuarios
 (
-    in _id_usuario int,
     in _nombre varchar(255),
     in _apellidop varchar(255),
     in _apellidom varchar(255), 
     in _fecha_nacimiento DATE,
     in _rfc VARCHAR(13),
     in _user varchar(100), 
-    in _pass varchar(255),
-    in _tipo_permiso varchar(200),
-    in _permiso_formulario varchar(200)
+    in _pass varchar(255)
 )
 begin 
     update usuarios set nombre = _nombre, apellidop = _apellidop, apellidom = _apellidom, fecha_nacimiento = _fecha_nacimiento, rfc = _rfc, user = _user, pass = _pass
-    where id_usuario = _id_usuario;
-
-    update permisos set tipo_permiso = _tipo_permiso, permiso_formulario = _permiso_formulario
-    where fk_id_usuario = _id_usuario; 
+    where user = _user; 
 end;  
 
-
-call p_modificar_usuarios(1, 'Carlos', 'Perez', 'Gomez', '1999-01-01', 'CDLFODOOS1123', 'carlos99', sha1('12345'), 'Lectura', 'Ver_refacciones'); 
+-- Prueba de funcionamiento --
+call p_modificar_usuarios('Juan', 'Perez', 'Hernandez', '2000-01-01', 'DAOYUIR121341', 'Juan11', sha1('1234')); 
 
 select * from usuarios; 
-select * from permisos; 
 
 -- Procedimiento almacenado para eliminar usuarios --
 DROP procedure if exists p_eliminar_usuarios; 
 CREATE procedure p_eliminar_usuarios
 (
-    in _id_usuario int
+    in _user varchar(100)
 
 )
 begin
-    delete from permisos
-    where fk_id_usuario = _id_usuario;
-
     delete from usuarios
-    where id_usuario = _id_usuario; 
+    where user = _user; 
 end; 
 
-call p_eliminar_usuarios(1); 
+-- Prueba de funcionamiento --
+call p_eliminar_usuarios('Juan11'); 
+
+-- Procedimiento almacenado para insertar permisos --
+drop PROCEDURE if exists p_insertar_permiso;
+create Procedure p_insertar_permiso
+(
+    in _fk_username varchar(100),
+    in _nombre_formulario varchar(255),
+    in _Lectura bit,
+    in _Escritura bit,
+    in _Actualizacion bit, 
+    in _Eliminacion bit
+)
+BEGIN   
+    insert into permisos (fk_username, nombre_formulario, Lectura, Escritura, Actualizacion, Eliminacion) values
+    (_fk_username, _nombre_formulario, _Lectura, _Escritura, _Actualizacion, _Eliminacion); 
+end; 
+
+-- Prueba de funcionamiento --
+
+call p_insertar_permiso('juan11', 'FrmAgregarRefacciones', 1, 1, 0, 0);
+
+selecT * from permisos; 
+
+-- Procedimiento almacenado para borrar permisos --
+drop procedure if EXISTS P_eliminar_permisos; 
+CREATE Procedure p_eliminar_permisos
+(
+    in _fk_username varchar(100)
+)
+BEGIN
+    delete from permisos
+    where fk_username = _fk_username;
+end;
+
+call p_eliminar_permisos('juan11');
+
 
 -- Procedimiento almacenado para insertar en la tabla de refacciones --
 create procedure p_insertar_refacciones
@@ -191,12 +218,11 @@ begin
     where Codigo_herramienta = _Codigo_herramienta;
 end;
 
--- Vista para usuarios --
-drop VIEW if exists v_vista_usuarios; 
-create VIEW v_vista_usuarios AS
-select u.nombre, u.apellidop, u.apellidom, u.fecha_nacimiento, u.rfc, u.user, u.pass, p.tipo_permiso, p.permiso_formulario from usuarios u
-join permisos p on u.id_usuario = p.fk_id_usuario;
-select * from v_vista_usuarios WHERE nombre like '%Jose%';
+-- Vista para usuarios y permisos --
+create VIEW v_vista_general AS
+select u.nombre, u.apellidop, u.apellidom, u.fecha_nacimiento, u.rfc, u.user, u.pass, p.nombre_formulario, p.Lectura, p.Escritura, p.Actualizacion, p.Eliminacion from usuarios u
+join permisos p on u.user = p.fk_username;
+select * from v_vista_general;
 
 -- Vista para refacciones --
 create View v_vista_refacciones AS
@@ -212,18 +238,6 @@ select * from v_vista_taller where nombre like '%Llave%';
 
 -- Pruebas de funcionamiento de los procedimientos almacenados --
 
-call p_insertar_usuarios('Juan', 'Perez', 'Gomez', '1990-01-01', 'SJD1231ASVLDF', 'juan90', sha1('1234'), 'Lectura,Escritura', 'Ver_refacciones,Agregar_refacciones');
-call p_modificar_usuarios(8, 'Carlos', 'Perez', 'Gomez', '1999-01-01', 'CDLFODOOS1123', 'carlos99', sha1('12345'), 'Lectura', 'Ver_refacciones'); 
-call p_modificar_usuarios(4, 'Carlos', 'Perez', 'Gomez', '1999-01-01', 'CDLFODOOS1123', 'carlos99', sha1('12345'), 'Lectura', 'Ver_refacciones'); 
-
-
-call p_eliminar_usuarios_permisos(3);
-call p_eliminar_usuarios_permisos(4);
-call p_eliminar_usuarios_permisos(5);
-
-select * from permisos;
-select * from usuarios;
-
 ------------------------------------------------------------------------------------------------
 call p_insertar_refacciones('6546846854657', 'Empaque de culata', 'Empaque de culata para camioneta FORD', 'Ford');
 call p_modificar_refacciones('6546846854657', 'Empaque de culata', 'Empaque de culata para camioneta TOYOTA', 'TOYOTA');
@@ -235,3 +249,38 @@ call p_modificar_herramienta('SSAHDFLJ1', 'Perica', '2 pulgadas', 'TRUPER', 'Per
 
 call p_eliminar_herramienta('SSAHDFLJ1');
 select * from taller;
+
+-- Procedimiento almacenado para validar --
+
+DROP PROCEDURE IF EXISTS p_validar; 
+CREATE PROCEDURE p_validar
+(
+    IN _user VARCHAR(255),
+    IN _pass VARCHAR(255)
+)
+BEGIN 
+    DECLARE x INT;
+
+    SELECT COUNT(*) INTO x 
+    FROM usuarios 
+    WHERE user = _user AND pass = _pass;
+
+    IF x > 0 THEN
+        SELECT 'Correcto' AS rs,
+            p.fk_username AS Username,
+            p.nombre_formulario,
+            p.Lectura,
+            p.Escritura,
+            p.Actualizacion,
+            p.Eliminacion
+        FROM 
+            permisos p
+        WHERE 
+            p.fk_username = _user;
+    ELSE
+        SELECT 'Error' AS rs;
+    END IF;
+END;
+
+-- Prueba de funcionamiento --
+call p_validar('Juan11', sha1('1234')); 
