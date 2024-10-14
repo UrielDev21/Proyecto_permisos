@@ -16,11 +16,7 @@ namespace Proyecto_permisos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new Frm_InicioSesion());
-=======
-            Application.Run(new FrmBuscarRefacciones());
->>>>>>> 90b349b4f5b87202824770be8b1c480ff2f1af83
+            Application.Run(Frm_InicioSesion());
         }
     }
 }
