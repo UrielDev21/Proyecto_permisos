@@ -30,12 +30,12 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.dtgvRefacciones = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvRefacciones)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -58,34 +58,37 @@
             this.label1.TabIndex = 41;
             this.label1.Text = "Buscar Refacciones";
             // 
-            // button1
+            // btnCerrar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(916, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(47, 45);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCerrar.ForeColor = System.Drawing.Color.White;
+            this.btnCerrar.Location = new System.Drawing.Point(916, 12);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(47, 45);
+            this.btnCerrar.TabIndex = 40;
+            this.btnCerrar.Text = "X";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // textBox1
+            // txtBuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 81);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(790, 61);
-            this.textBox1.TabIndex = 39;
+            this.txtBuscar.Location = new System.Drawing.Point(145, 81);
+            this.txtBuscar.Multiline = true;
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(790, 61);
+            this.txtBuscar.TabIndex = 39;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
-            // dataGridView1
+            // dtgvRefacciones
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 148);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(896, 429);
-            this.dataGridView1.TabIndex = 38;
+            this.dtgvRefacciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvRefacciones.Location = new System.Drawing.Point(39, 148);
+            this.dtgvRefacciones.Name = "dtgvRefacciones";
+            this.dtgvRefacciones.RowHeadersWidth = 51;
+            this.dtgvRefacciones.RowTemplate.Height = 24;
+            this.dtgvRefacciones.Size = new System.Drawing.Size(896, 429);
+            this.dtgvRefacciones.TabIndex = 38;
+            this.dtgvRefacciones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvRefacciones_CellContentClick);
             // 
             // label2
             // 
@@ -104,9 +107,9 @@
             this.ClientSize = new System.Drawing.Size(975, 607);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.txtBuscar);
+            this.Controls.Add(this.dtgvRefacciones);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -114,7 +117,7 @@
             this.Name = "FrmBuscarRefacciones";
             this.Text = "FrmBuscarRefacciones";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvRefacciones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,9 +127,9 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.DataGridView dtgvRefacciones;
         private System.Windows.Forms.Label label2;
     }
 }

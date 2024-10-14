@@ -43,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Manejador_login.cs" />
+=======
+    <Compile Include="Manejador_Refacciones.cs" />
+>>>>>>> 90b349b4f5b87202824770be8b1c480ff2f1af83
     <Compile Include="Manejador_taller.cs" />
     <Compile Include="Manejador_usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
