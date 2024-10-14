@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\proyecto_permisos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|c:\\users\\saave\\onedrive\\documentos\\aorus\\usuarios\\proyecto_permisos\\proyecto_permisos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{598E5B1D-E3A9-4F39-AA2E-A65A52C130BF}|Proyecto_permisos\\Proyecto_permisos.csproj|solutionrelative:proyecto_permisos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -102,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -130,7 +130,19 @@
               "RelativeToolTip": "Manejador\\Manejador_login.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T17:56:45.558Z",
+              "WhenOpened": "2024-10-13T17:56:45.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Program.cs",
+              "RelativeDocumentMoniker": "Proyecto_permisos\\Program.cs",
+              "ToolTip": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Program.cs",
+              "RelativeToolTip": "Proyecto_permisos\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:13:19.22Z",
               "EditorCaption": ""
             },
             {
@@ -232,19 +244,6 @@
               "ViewState": "AQIAACkAAAAAAAAAAADwvzcAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T14:16:28.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Program.cs",
-              "RelativeDocumentMoniker": "Proyecto_permisos\\Program.cs",
-              "ToolTip": "C:\\Users\\saave\\OneDrive\\Documentos\\Aorus\\Usuarios\\Proyecto_permisos\\Proyecto_permisos\\Program.cs",
-              "RelativeToolTip": "Proyecto_permisos\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T15:13:19.22Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
