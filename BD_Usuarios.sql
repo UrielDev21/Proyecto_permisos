@@ -1,15 +1,15 @@
 -- Tabla de usuarios --
 create table usuarios
 (
-    id_usuario int PRIMARY key auto_increment, 
+    user varchar(100) PRIMARY KEY,
+    pass varchar(255),
     nombre VARCHAR(255), 
     apellidop varchar(255),
     apellidom varchar(255), 
     fecha_nacimiento DATE,
-    rfc VARCHAR(13),
-    user varchar(100) UNIQUE,
-    pass varchar(255)
+    rfc VARCHAR(13)
 );
+
 describe usuarios; 
 -- Tabla permisos -- 
 create table permisos
@@ -67,6 +67,9 @@ end;
 -- Prueba de funcionamiento --
 call p_insertar_usuarios('Juan', 'Perez', 'Prado', '2000-01-01', 'DAOYUIR121341', 'Juan11', sha1('1234')); 
 select * from usuarios; 
+
+SHOW PROCEDURE STATUS WHERE Name = 'p_insertar_usuarios';
+
 
 -- Procedimiento almacenado para modificar usuarios --
 drop procedure if exists p_modificar_usuarios; 
@@ -284,3 +287,7 @@ END;
 
 -- Prueba de funcionamiento --
 call p_validar('Juan11', sha1('1234')); 
+
+SELECT * from usuarios; 
+
+describe permisos; 

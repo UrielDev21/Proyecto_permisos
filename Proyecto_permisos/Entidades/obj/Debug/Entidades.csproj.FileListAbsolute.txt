@@ -1,0 +1,6 @@
+C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Entidades\bin\Debug\Entidades.dll
+C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Entidades\bin\Debug\Entidades.pdb
+C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Entidades\obj\Debug\Entidades.dll
+C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Entidades\obj\Debug\Entidades.pdb

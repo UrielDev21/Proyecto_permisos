@@ -50,3 +50,5 @@ C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Proyecto_per
 C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Proyecto_permisos\obj\Debug\Proyecto.27850DD6.Up2Date
 C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Proyecto_permisos\obj\Debug\Proyecto_permisos.exe
 C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Proyecto_permisos\obj\Debug\Proyecto_permisos.pdb
+C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Proyecto_permisos\bin\Debug\Entidades.dll
+C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Proyecto_permisos\bin\Debug\Entidades.pdb

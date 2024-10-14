@@ -186,6 +186,10 @@
     <None Include="Resources\1000_F_176876347_NdDgOmHqQ5hrP9trpXD8zkIepevLqtC3.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{0fac4e0d-7f90-4c40-8594-daae0b2e7111}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Manejador\Manejador.csproj">
       <Project>{8a4a460d-5bd5-4f11-ab30-88e6f7edf2f7}</Project>
       <Name>Manejador</Name>

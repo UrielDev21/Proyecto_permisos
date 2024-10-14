@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manejador", "Manejador\Mane
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acceso_datos", "Acceso_datos\Acceso_datos.csproj", "{A6018B95-A2C8-4041-B2D6-C2C7813BCA97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{0FAC4E0D-7F90-4C40-8594-DAAE0B2E7111}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A6018B95-A2C8-4041-B2D6-C2C7813BCA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6018B95-A2C8-4041-B2D6-C2C7813BCA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6018B95-A2C8-4041-B2D6-C2C7813BCA97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FAC4E0D-7F90-4C40-8594-DAAE0B2E7111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FAC4E0D-7F90-4C40-8594-DAAE0B2E7111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FAC4E0D-7F90-4C40-8594-DAAE0B2E7111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FAC4E0D-7F90-4C40-8594-DAAE0B2E7111}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

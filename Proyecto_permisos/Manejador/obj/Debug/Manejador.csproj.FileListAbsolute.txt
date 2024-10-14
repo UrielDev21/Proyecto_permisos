@@ -35,3 +35,5 @@ C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Manejador\ob
 C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Manejador\obj\Debug\Manejador.csproj.Up2Date
 C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Manejador\obj\Debug\Manejador.dll
 C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Manejador\obj\Debug\Manejador.pdb
+C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Manejador\bin\Debug\Entidades.dll
+C:\Users\saave\OneDrive\Documentos\Aorus\Usuarios\Proyecto_permisos\Manejador\bin\Debug\Entidades.pdb
